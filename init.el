@@ -169,6 +169,9 @@
 ;; Allow users to provide an optional "init-local" containing personal settings
 (require 'init-local)
 
+;; config personal software packages
+(require 'init-package)
+
 (provide 'init)
 
 ;; Local Variables:
