@@ -11,5 +11,9 @@
 
 (load-theme 'monokai t)
 
+;;; config hungry-delete
+(require 'hungry-delete)
+(global-hungry-delete-mode)
+
 (provide 'init-local)
 ;;; init-local.el end here

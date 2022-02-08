@@ -6,6 +6,7 @@
 ;;; add package here
 (defvar ideconfu/packages '(
                             monokai-theme
+                            hungry-delete
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()
