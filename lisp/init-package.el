@@ -9,6 +9,7 @@
                             hungry-delete
                             counsel
                             swiper
+                            popwin
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()

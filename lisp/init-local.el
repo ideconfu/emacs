@@ -27,6 +27,12 @@
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 (global-set-key (kbd "C-h o") 'counsel-describe-symbol)
+(global-set-key (kbd "C-c C-g") 'counsel-git)
+(global-set-key (kbd "C-c C-j") 'counsel-git-grep)
+
+;; config popwin
+(require 'popwin)
+(popwin-mode 1)
 
 (provide 'init-local)
 ;;; init-local.el end here
