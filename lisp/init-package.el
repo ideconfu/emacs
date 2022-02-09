@@ -7,6 +7,8 @@
 (defvar ideconfu/packages '(
                             monokai-theme
                             hungry-delete
+                            counsel
+                            swiper
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()
