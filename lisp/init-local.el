@@ -30,6 +30,26 @@
 (global-set-key (kbd "C-c C-g") 'counsel-git)
 (global-set-key (kbd "C-c C-j") 'counsel-git-grep)
 
+;; config indent-buffer
+(defun indent-buffer ()
+  "Indent the currently visited buffer."
+  (interactive)
+  (indent-region (point-min) (point-max)))
+
+(defun indent-region-or-buffer ()
+  "Indent a region if selected, otherwise the whole buffer."
+  (interactive)
+  (save-excursion
+    (if (region-active-p)
+        (progn
+          (indent-region (region-beginning) (region-end))
+          (message "Indent selected region."))
+      (progn
+        (indent-buffer)
+        (message "Indent buffer.")))))
+
+(global-set-key (kbd "C-c C-\\") 'indent-region-or-buffer)
+
 ;; config popwin
 (require 'popwin)
 (popwin-mode 1)
