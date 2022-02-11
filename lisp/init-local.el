@@ -14,6 +14,9 @@
 ;;; config hungry-delete
 (require 'hungry-delete)
 (global-hungry-delete-mode)
+;;; (define-key hungry-delete-mode-map (kbd "DEL") 'hungry-delete-backward)
+(global-set-key (kbd "C-c C-b") 'hungry-delete-backward)
+(global-set-key (kbd "C-c C-f") 'hungry-delete-forward)
 
 ;;; config swiper
 (ivy-mode)
