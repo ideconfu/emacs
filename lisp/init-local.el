@@ -53,6 +53,30 @@
 
 (global-set-key (kbd "C-c C-\\") 'indent-region-or-buffer)
 
+;; config occur-mode
+(defun occur-dwim ()
+  "Call 'occur' with a sane default."
+  (interactive)
+  (push (if (region-active-p)
+            (buffer-substring-no-properties
+             (region-beginning)
+             (region-end))
+          (let ((sym (thing-at-point 'symbol)))
+            (when (stringp sym)
+              (regexp-quote sym))))
+        regexp-history)
+  (call-interactively 'occur)
+  ;;(switch-to-buffer-other-window "*Occur*")
+  )
+
+(global-set-key (kbd "M-s o") 'occur-dwim)
+
+;; config counsel-imenu
+(global-set-key (kbd "M-s i") 'counsel-imenu)
+
+;; config expand region
+(global-set-key (kbd "C-c m") 'er/expand-region)
+
 ;; config popwin
 (require 'popwin)
 (popwin-mode 1)

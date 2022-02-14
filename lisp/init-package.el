@@ -10,6 +10,7 @@
                             counsel
                             swiper
                             popwin
+                            expand-region
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()
