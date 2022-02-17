@@ -77,6 +77,8 @@
 ;; config expand region
 (global-set-key (kbd "C-c m") 'er/expand-region)
 
+;; config iedit-mode
+(global-set-key (kbd "M-s e") 'iedit-mode)
 ;; config popwin
 (require 'popwin)
 (popwin-mode 1)

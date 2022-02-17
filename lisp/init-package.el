@@ -11,6 +11,7 @@
                             swiper
                             popwin
                             expand-region
+                            iedit
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()
