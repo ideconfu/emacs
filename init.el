@@ -169,6 +169,9 @@
 ;; config personal software packages
 (require 'init-package)
 
+;; config evil mode
+(require 'init-evil)
+
 ;; Allow users to provide an optional "init-local" containing personal settings
 (require 'init-local)
 

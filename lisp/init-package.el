@@ -12,6 +12,7 @@
                             popwin
                             expand-region
                             iedit
+                            evil
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()

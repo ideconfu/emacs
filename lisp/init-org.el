@@ -111,9 +111,9 @@ typical word processor."
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-capture-templates
-      `(("t" "todo" entry (file "")  ; "" => `org-default-notes-file'
+      `(("t" "todo" entry (file "~/org/gtd.org")  ; "" => `org-default-notes-file'
          "* NEXT %?\n%U\n" :clock-resume t)
-        ("n" "note" entry (file "")
+        ("n" "note" entry (file "~/org/notes.org")
          "* %? :NOTE:\n%U\n%a\n" :clock-resume t)
         ))
 
