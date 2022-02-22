@@ -13,6 +13,7 @@
                             expand-region
                             iedit
                             evil
+                            evil-leader
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()
