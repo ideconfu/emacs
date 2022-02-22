@@ -14,6 +14,7 @@
                             iedit
                             evil
                             evil-leader
+                            window-numbering
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()

@@ -79,9 +79,13 @@
 
 ;; config iedit-mode
 (global-set-key (kbd "M-s e") 'iedit-mode)
+
 ;; config popwin
 (require 'popwin)
 (popwin-mode 1)
+
+;; config window-numbering
+(window-numbering-mode 1)
 
 (provide 'init-local)
 ;;; init-local.el end here
