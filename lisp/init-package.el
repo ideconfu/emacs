@@ -15,6 +15,8 @@
                             evil
                             evil-leader
                             window-numbering
+                            evil-surround
+                            evil-nerd-commenter
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()

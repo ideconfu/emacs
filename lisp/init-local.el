@@ -69,13 +69,13 @@
   ;;(switch-to-buffer-other-window "*Occur*")
   )
 
-(global-set-key (kbd "M-s o") 'occur-dwim)
+;;(global-set-key (kbd "M-s o") 'occur-dwim)
 
 ;; config counsel-imenu
-(global-set-key (kbd "M-s i") 'counsel-imenu)
+;;(global-set-key (kbd "M-s i") 'counsel-imenu)
 
 ;; config expand region
-(global-set-key (kbd "C-c m") 'er/expand-region)
+;;(global-set-key (kbd "C-c m") 'er/expand-region)
 
 ;; config iedit-mode
 (global-set-key (kbd "M-s e") 'iedit-mode)
@@ -86,6 +86,25 @@
 
 ;; config window-numbering
 (window-numbering-mode 1)
+
+;; config evil emacs mode
+(dolist (mode '(ag-mode
+                flycheck-error-list-mode
+                occur-mode
+                git-rebase-mode
+                ))
+  (add-to-list 'evil-motion-state-modes mode))
+
+;; config occur-mode evil-mode instead emacs-mode
+;; (add-hook 'occur-mode-hook
+;;           (lambda ()
+;;             (evil-add-hjkl-bindings occur-mode-map 'emacs
+;;               (kbd "/") 'evil-search-forward
+;;               (kbd "n") 'evil-search-next
+;;               (kbd "N") 'evil-search-previous
+;;               (kbd "C-d") 'evil-scroll-down
+;;               (kbd "C-u") 'evil-scroll-up
+;;               )))
 
 (provide 'init-local)
 ;;; init-local.el end here
