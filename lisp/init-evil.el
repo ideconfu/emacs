@@ -39,6 +39,7 @@
   "si" 'counsel-imenu
   "aa" 'copy-to-x-clipboard
   "pp" 'paste-from-x-clipboard
+  "ff" 'find-file-in-project
   )
 
 ;;set keybindings
