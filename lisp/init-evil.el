@@ -37,6 +37,8 @@
   "cr" 'comment-or-uncomment-region
   "so" 'occur-dwim
   "si" 'counsel-imenu
+  "aa" 'copy-to-x-clipboard
+  "pp" 'paste-from-x-clipboard
   )
 
 ;;set keybindings

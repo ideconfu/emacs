@@ -20,6 +20,7 @@
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
+(defconst *win64* (eq system-type 'windows-nt))
 
 
 ;; Adjust garbage collection thresholds during startup, and thereafter
@@ -168,6 +169,9 @@
 
 ;; config personal software packages
 (require 'init-package)
+
+;;config xclip mode
+(require 'init-clipboard)
 
 ;; config evil mode
 (require 'init-evil)
