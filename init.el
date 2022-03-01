@@ -173,6 +173,9 @@
 ;;config xclip mode
 (require 'init-clipboard)
 
+;;config find-file-in-project
+(require 'find-file-in-project)
+
 ;; config evil mode
 (require 'init-evil)
 
