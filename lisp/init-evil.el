@@ -16,7 +16,7 @@
   "xf" 'counsel-find-file
   "xb" 'ivy-switch-buffer
   "xk" 'kill-buffer
-  "ss" 'swiper
+  "ss" 'my-swiper
   "xj" 'dired-jump
   "0"  'select-window-0
   "1"  'select-window-1

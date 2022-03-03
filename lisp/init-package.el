@@ -17,6 +17,7 @@
                             window-numbering
                             evil-surround
                             evil-nerd-commenter
+                            xclip
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()

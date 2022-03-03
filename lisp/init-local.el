@@ -84,6 +84,9 @@
 (require 'popwin)
 (popwin-mode 1)
 
+;; config xclip-mode(need linux install xclip and windows install VcXsrv)
+(xclip-mode 1)
+
 ;; config window-numbering
 (window-numbering-mode 1)
 

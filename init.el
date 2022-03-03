@@ -21,6 +21,8 @@
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
 (defconst *win64* (eq system-type 'windows-nt))
+(defconst *linux* (or (eq system-type 'gnu/linux) (eq system-type 'linux)))
+(defconst *unix* (or *linux* (eq system-type 'usg-unix-v) (eq system-type 'berkeley-unix)))
 
 
 ;; Adjust garbage collection thresholds during startup, and thereafter
@@ -169,6 +171,9 @@
 
 ;; config personal software packages
 (require 'init-package)
+
+;; config customization
+(require 'init-customization)
 
 ;;config xclip mode
 (require 'init-clipboard)
