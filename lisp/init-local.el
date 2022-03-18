@@ -109,5 +109,7 @@
 ;;               (kbd "C-u") 'evil-scroll-up
 ;;               )))
 
+(require 'color-rg)
+
 (provide 'init-local)
 ;;; init-local.el end here
