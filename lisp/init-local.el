@@ -109,6 +109,7 @@
 ;;               (kbd "C-u") 'evil-scroll-up
 ;;               )))
 
+;; base on ripgrep(need linux install ripgrep)
 (require 'color-rg)
 
 (provide 'init-local)
