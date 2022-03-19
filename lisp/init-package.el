@@ -18,6 +18,7 @@
                             evil-surround
                             evil-nerd-commenter
                             xclip
+                            challenger-deep-theme
                             ) "Default packages")
 
 (defun ideconfu/packages-installed-p ()

@@ -9,7 +9,8 @@
 
 (setq-default cursor-type 'bar)
 
-(load-theme 'monokai t)
+;; (load-theme 'monokai t)
+(load-theme 'challenger-deep t)
 
 ;;; config hungry-delete
 (require 'hungry-delete)
