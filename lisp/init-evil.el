@@ -25,6 +25,7 @@
   "4"  'select-window-4
   "5"  'select-window-5
   "xe" 'sanityinc/eval-last-sexp-or-region
+  "x0" 'delete-window
   "x1" 'sanityinc/toggle-delete-other-windows
   "x2" 'split-window-vertically
   "x3" 'split-window-horizontally
@@ -40,12 +41,17 @@
   "aa" 'copy-to-x-clipboard
   "pp" 'paste-from-x-clipboard
   "ff" 'find-file-in-project
+  "rg" 'color-rg-search-symbol-in-project
+  "qq" 'counsel-etags-grep
   )
 
 ;;set keybindings
 (define-key evil-visual-state-map (kbd "v") 'er/expand-region)
 (with-eval-after-load 'evil
   (setq expand-region-contract-fast-key "z"))
+
+;;disable evil keybindings
+(define-key evil-motion-state-map (kbd "C-]") nil)
 
 (provide 'init-evil)
 ;;; init-evil.el ends here
